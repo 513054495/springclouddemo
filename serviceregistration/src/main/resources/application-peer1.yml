@@ -1,0 +1,10 @@
+server:
+  port: 8801
+
+eureka:
+  environment: dev
+  instance:
+    hostname: peer1
+  client:
+    serviceUrl:
+      defaultZone: http://peer2:8802/eureka/

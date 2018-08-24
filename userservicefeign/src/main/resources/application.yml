@@ -1,0 +1,12 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:8801/eureka/,http://peer2:8802/eureka/
+server:
+  port: 8806
+spring:
+  application:
+    name: user-service-feign
+feign:
+  hystrix:
+   enabled: true
